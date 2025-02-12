@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', serif;
+}
+
+body {
+    padding: 4rem 8rem;
+    margin: auto 0;
+}
+
+.container-main {
+    background-color: #27b1bf;
+}
+
+.container-header {
+    background-color: #176585;
+    padding: 2rem 2rem 0 2rem;
+    text-align: center;
+}
+
+.container-header h1 {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.container-header-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    color: #fff;
+    border-top: 1px solid #fff;
+    margin-top: 20px;
+}
+
+.header-link {
+    flex: 1;
+    padding: 1rem 6rem;
+    color: #176585;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+/* #header-link {
+    border-right: 1px solid #fff;
+} */
+
+.header-link svg {
+    height: 1.2em;
+    fill: #176585;
+}
+
+.container-content {
+    padding: 2rem;
+}
+
+.list-content {
+    background-color: #fff;
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    gap: 20px;
+}
+
+.list-content-link {
+    background-color: #fff;
+    padding: 1rem;
+}
+
+.list-content-link a {
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    color: #fff;
+    background-color: #faba32;
+    padding: 1rem;
+    font-size: 18px;
+}
+
+.list-content svg, .list-content-link svg {
+    height: 1.5em;
+    fill: #cacaca;
+}
+
+.list-content-link svg {
+    height: 1.5em;
+    fill: #fff;
+}
+
+.list-content p {
+    color: #000;
+    font-size: 16px;
+}
+
+.list-content span {
+    color: #cacaca;
+    font-size: 16px;
+}
+
+
+@media (max-width: 900px) {
+    body {
+        padding: 0;
+        background-color: #27b1bf;
+    }
+}
+
+@media (max-width: 548px) {
+    .container-header {
+        padding: 2rem 1rem 1rem 1rem;
+    }
+    .header-link {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 420px) {
+    body {
+        background-color: #fff;
+    }
+    .container-header {
+        padding: 2rem 1rem 1rem 1rem;
+    }
+    .header-link {
+        padding: 1rem;
+    }
+    .container-content {
+        padding: .5rem;
+    }
+    .list-content p {
+        font-size: 14px;
+    }
+}
